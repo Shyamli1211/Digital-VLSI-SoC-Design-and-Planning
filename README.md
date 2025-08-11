@@ -26,6 +26,5 @@ The program covers complete RTL to GDSII flow, floorplanning, synthesis, timing 
 ## Credits
 Course by VSD & NASSCOM  
 Author: Shyamli Kumari
-
 Email: shyamligupta1211@gmail.com
 
