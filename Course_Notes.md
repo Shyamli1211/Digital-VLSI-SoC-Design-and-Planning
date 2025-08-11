@@ -28,7 +28,7 @@ Digital-VLSI-SoC-Design-and-Planning-Program/
 
 ## 📝 Notes
 
-All day-wise course notes are stored in the `notes/` folder in markdown (`.md`) and PDF formats for easy reference.
+All day-wise course notes are stored in the `notes/` folder in markdown (`notes.md`) and PDF formats for easy reference.
 
 ---
 
