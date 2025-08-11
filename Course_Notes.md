@@ -17,7 +17,7 @@ During the program I learned the RTL → GDSII flow using open-source EDA tools.
 
 ## Folder structure:
 Digital-VLSI-SoC-Design-and-Planning-Program/
-├── README.md
+├──Course_Notes.md
 ├── notes/ # Day-wise notes (markdown / pdf)
 ├── scripts/ # TCL / Yosys / bash examples
 ├── screenshots/ # floorplan, magic, timing images
