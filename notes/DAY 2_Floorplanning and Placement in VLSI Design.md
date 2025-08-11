@@ -149,6 +149,8 @@ UF = (700 / 1000) × 100% = **70%**.
 ---
 
 ## 22. Final Placement Optimization
+<img width="1920" height="1080" alt="Screenshot (82)" src="https://github.com/user-attachments/assets/fc843ea0-a3c3-4f5f-bb4f-843f6109c495" />
+
 - After initial placement, the tool performs:
   - **Timing Optimization** – Fixes setup/hold violations.
   - **Congestion Optimization** – Relieves routing hotspots.
@@ -158,6 +160,9 @@ UF = (700 / 1000) × 100% = **70%**.
 ---
 
 ## 23. Need for Libraries and Characterization
+<img width="1920" height="1080" alt="Screenshot (83)" src="https://github.com/user-attachments/assets/bc9f1951-7cab-42d5-8ba2-24f358018077" />
+<img width="1920" height="1080" alt="Screenshot (84)" src="https://github.com/user-attachments/assets/eddf8cb9-00f4-4b23-8c8a-ba1a17138684" />
+
 - **Libraries Required:**
   - `.lib` – Timing, power, and functional data of cells.
   - `.lef` – Physical dimensions and pin locations.
@@ -177,6 +182,9 @@ UF = (700 / 1000) × 100% = **70%**.
 ---
 
 ## 25. Inputs for Cell Design Flow
+<img width="1920" height="1080" alt="Screenshot (85)" src="https://github.com/user-attachments/assets/1bb1a670-618d-421f-b86a-e659569a0f3e" />
+<img width="1920" height="1080" alt="Screenshot (86)" src="https://github.com/user-attachments/assets/ddb63f31-8704-4214-a310-e980bf53aaca" />
+
 - **Process Design Kit (PDK)** – Contains design rules, layer definitions, and SPICE models.
 - **Library Models** – Standard cells, IO cells, and macros.
 - **Timing Constraints** – Setup and hold requirements from the designer.
@@ -184,17 +192,33 @@ UF = (700 / 1000) × 100% = **70%**.
 
 ---
 
-## 26. Circuit Design Step
-- **Objective:** Design the transistor-level schematic for each standard cell.
-- **Steps:**
-  1. Draw circuit in schematic editor.
-  2. Run SPICE simulation to verify functionality and timing.
-  3. Optimize for power, area, and speed.
-- **Outcome:** A verified circuit ready for layout design.
+## 26. Cell Design Flow
+<img width="1920" height="1080" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/ed04e00e-3cbd-42e0-bc98-65cd8daf8515" />
+
+
+**Inputs:**
+- Process Design Kits (PDKs) containing:
+  - Design Rule Check (DRC) and Layout vs. Schematic (LVS) rules
+  - SPICE models
+  - Standard cell libraries
+  - User-defined specifications
+
+**Design Steps:**
+1. **Circuit Design** – Create the transistor-level schematic from the logic function.
+2. **Layout Design** – Implement the physical layout using techniques like Euler’s path and stick diagrams to optimize routing and reduce area.
+3. **Characterization** – Simulate and measure performance parameters such as delay, power, and output load handling.
+
+**Outputs:**
+- **CDL (Circuit Description Language)** file containing the final netlist of the designed standard cell.
+
+<img width="1920" height="1080" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/ed04e00e-3cbd-42e0-bc98-65cd8daf8515" />
+
 
 ---
 
 ## 27. Layout Design Step
+<img width="1920" height="1080" alt="Screenshot (88)" src="https://github.com/user-attachments/assets/1bf2abd8-3e8c-4835-96f9-7b657fdfbd39" />
+
 - **Purpose:** Create physical mask layout for fabrication.
 - **Key Checks:**
   - **DRC (Design Rule Check)** – Ensures layout follows manufacturing rules.
@@ -204,6 +228,8 @@ UF = (700 / 1000) × 100% = **70%**.
 ---
 
 ## 28. Typical Characterization Flow
+<img width="1920" height="1080" alt="Screenshot (89)" src="https://github.com/user-attachments/assets/3d337f5b-cf22-4943-8800-58256813e482" />
+
 1. **Stimulus Creation:** Apply a variety of input patterns to cells.
 2. **SPICE Simulation:** Run across different PVT corners.
 3. **Data Extraction:** Measure delays, power, and transition times.
@@ -212,6 +238,8 @@ UF = (700 / 1000) × 100% = **70%**.
 ---
 
 ## 29. Timing Threshold Definitions
+<img width="1920" height="1080" alt="Screenshot (90)" src="https://github.com/user-attachments/assets/90034b85-f870-4537-aee5-b60e495b80b8" />
+
 - **Purpose:** Define measurement points for timing analysis.
 - **Common Thresholds:**
   - **20% of VDD:** Starting point for rise time measurement.
