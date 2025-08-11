@@ -5,6 +5,11 @@
 ## Lecture 0: Introduction to QFN-48 Package, Chip, Pads, Core, Die and IPs
 ![WhatsApp Image 2025-08-11 at 23 37 51_303c2936](https://github.com/user-attachments/assets/3aba94e3-a9eb-4138-a917-06a5ce62b0f5)
 
+![WhatsApp Image 2025-08-11 at 23 38 02_d3077d3c](https://github.com/user-attachments/assets/ac1250ee-cf94-4855-9bac-a4e7e6acd0d7)
+
+![WhatsApp Image 2025-08-11 at 23 38 15_41aabc07](https://github.com/user-attachments/assets/753289e9-f171-4218-86fd-9a2aa8acdcb6)
+
+
 
 The **QFN-48 (Quad Flat No-lead, 48 pins)** package is a type of surface-mount integrated circuit package with 48 contact pads placed around the edges, but without protruding leads.  
 Inside this package is the **chip** — the complete integrated circuit. Within the chip lies the **die**, a thin piece of semiconductor material (usually silicon) where the actual transistors and logic gates are fabricated.  
@@ -20,7 +25,7 @@ The QFN-48 package is commonly used in ASIC projects because it is compact, prov
 ---
 
 ## Lecture 1: Introduction to RISC-V
-![Lecture 1 Screenshot](images/day1/Screenshot%20(63).png)
+
 
 **RISC-V** is an **open-source Instruction Set Architecture (ISA)** — the fundamental set of commands that a processor understands and executes.  
 Unlike proprietary ISAs such as ARM or x86, RISC-V is license-free, meaning:
@@ -34,7 +39,11 @@ For students and researchers, RISC-V enables learning and experimentation withou
 ---
 
 ## Lecture 2: From Software Applications to Hardware
-![Lecture 2 Screenshot](images/day1/Screenshot%20(5).png)
+![WhatsApp Image 2025-08-11 at 23 41 53_af225796](https://github.com/user-attachments/assets/0fa1db48-2d04-400c-b094-c866e30d04b0)
+
+![WhatsApp Image 2025-08-11 at 23 41 53_497d6ac2](https://github.com/user-attachments/assets/df42198d-c2f3-4faa-8b02-65f89ae7a21e)
+
+
 
 The journey from a **software application** to **hardware execution** involves several layers:
 1. **High-level code** (e.g., C, Python) → Written by developers.
@@ -49,7 +58,8 @@ In ASIC design, we often simulate this process:
 ---
 
 ## Lecture 3: Introduction to All Components of Open-Source Digital ASIC Design
-![Lecture 3 Screenshot](images/day1/Screenshot%20(6).png)
+![WhatsApp Image 2025-08-11 at 23 38 50_ab362f49](https://github.com/user-attachments/assets/6a6869b0-0a57-4eb3-a080-c116c728cc5c)
+
 
 An open-source ASIC design environment includes:
 - **RTL Design Tools** → For writing hardware description (Verilog, VHDL).
@@ -64,7 +74,8 @@ Using open-source tools (OpenLANE, Sky130 PDK) allows complete chip design witho
 ---
 
 ## Lecture 4: Simplified RTL to GDS Flow
-![Lecture 4 Screenshot](images/day1/Screenshot%20(8).png)
+![WhatsApp Image 2025-08-11 at 23 45 09_4eae8656](https://github.com/user-attachments/assets/8d5b889b-ae6b-4c36-a7d1-6b95a445333a)
+
 
 **RTL to GDSII Flow**:
 1. **RTL (Register Transfer Level)** → High-level hardware description.
@@ -79,7 +90,9 @@ Using open-source tools (OpenLANE, Sky130 PDK) allows complete chip design witho
 ---
 
 ## Lecture 5: Introduction to OpenLANE and Sky130 PDK
-![Lecture 5 Screenshot](images/day1/Screenshot%20(56).png)
+![WhatsApp Image 2025-08-11 at 23 46 25_3eafc1ec](https://github.com/user-attachments/assets/0a6780fa-0363-4bcb-ad25-c782483c917d)
+
+![WhatsApp Image 2025-08-11 at 23 51 59_fece046f](https://github.com/user-attachments/assets/fdf620ad-ef2a-4906-887e-a6485483f85b)
 
 **OpenLANE** is a fully automated open-source RTL-to-GDS flow. It integrates multiple tools to handle synthesis, placement, routing, and verification.
 
@@ -95,7 +108,8 @@ Using Sky130 PDK with OpenLANE lets designers create chips that can actually be 
 ---
 
 ## Lecture 6: Detailed ASIC Design Flow in OpenLANE
-![Lecture 6 Screenshot](images/day1/Screenshot%20(9).png)
+![WhatsApp Image 2025-08-11 at 23 52 33_fa3a354e](https://github.com/user-attachments/assets/9c7f8b70-25f7-42f7-978e-b2767d233bc4)
+
 
 The complete OpenLANE design process includes:
 1. **Preparation** → Setting up design files and constraints.
