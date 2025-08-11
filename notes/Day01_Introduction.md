@@ -3,7 +3,8 @@
 ---
 
 ## Lecture 0: Introduction to QFN-48 Package, Chip, Pads, Core, Die and IPs
-![Lecture 0 Screenshot](images/day1/Screenshot%20(62).png)
+![WhatsApp Image 2025-08-11 at 23 37 51_303c2936](https://github.com/user-attachments/assets/3aba94e3-a9eb-4138-a917-06a5ce62b0f5)
+
 
 The **QFN-48 (Quad Flat No-lead, 48 pins)** package is a type of surface-mount integrated circuit package with 48 contact pads placed around the edges, but without protruding leads.  
 Inside this package is the **chip** — the complete integrated circuit. Within the chip lies the **die**, a thin piece of semiconductor material (usually silicon) where the actual transistors and logic gates are fabricated.  
