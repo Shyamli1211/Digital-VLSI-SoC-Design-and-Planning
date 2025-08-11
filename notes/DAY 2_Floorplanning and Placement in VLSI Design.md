@@ -3,6 +3,8 @@
 ---
 
 ## 12. Utilization Factor and Aspect Ratio
+<img width="1920" height="1080" alt="Screenshot (67)" src="https://github.com/user-attachments/assets/2f073fda-8fd7-40d3-bd1d-d3e703c20df2" />
+<img width="1920" height="1080" alt="Screenshot (68)" src="https://github.com/user-attachments/assets/f31e9feb-1500-4960-b165-8c1d978a88ad" />
 
 ### **Utilization Factor (UF)**
 - **Definition:** The ratio of the total area occupied by standard cells to the total available core area in the chip.
@@ -19,6 +21,7 @@ If core area = 1000 μm² and total cell area = 700 μm², then:
 UF = (700 / 1000) × 100% = **70%**.
 
 ---
+<img width="1920" height="1080" alt="Screenshot (69)" src="https://github.com/user-attachments/assets/503f50dc-a418-4b93-a287-78703a980b2e" />
 
 ### **Aspect Ratio (AR)**
 - **Definition:** Ratio of core height to core width.  
@@ -31,6 +34,9 @@ UF = (700 / 1000) × 100% = **70%**.
 ---
 
 ## 13. Concept of Pre-Placed Cells
+<img width="1920" height="1080" alt="Screenshot (70)" src="https://github.com/user-attachments/assets/8375916c-e9fe-4f05-8558-80a833408b12" />
+<img width="1920" height="1080" alt="Screenshot (71)" src="https://github.com/user-attachments/assets/52de5aa0-9093-4f09-aaa0-82e84403c972" />
+
 - **Pre-Placed Cells** are large functional blocks fixed at specific chip locations **before** automated placement runs.
 - Examples:
   - SRAM Macros
@@ -47,6 +53,9 @@ UF = (700 / 1000) × 100% = **70%**.
 ---
 
 ## 14. Decoupling Capacitors (Decaps)
+<img width="1920" height="1080" alt="Screenshot (72)" src="https://github.com/user-attachments/assets/4d3c70ba-b094-4bf3-b568-eac0e59120ad" />
+<img width="1920" height="1080" alt="Screenshot (73)" src="https://github.com/user-attachments/assets/2143cb2b-7348-41e1-8d47-7d4a63c635cf" />
+
 - **Function:** Act as local charge reservoirs to stabilize supply voltage.
 - **Why Needed:**  
   When many transistors switch simultaneously, the demand for current increases abruptly → causes IR drop. Decaps release stored charge instantly.
@@ -56,6 +65,8 @@ UF = (700 / 1000) × 100% = **70%**.
 ---
 
 ## 15. Power Planning
+<img width="1920" height="1080" alt="Screenshot (74)" src="https://github.com/user-attachments/assets/03af0b31-9383-4aa4-aa00-199b470ee03b" />
+
 - **Objective:** Deliver stable VDD and GND across the chip.
 - **Elements:**
   1. **Power Rings:** Thick metal loops around core.
@@ -68,6 +79,9 @@ UF = (700 / 1000) × 100% = **70%**.
 ---
 
 ## 16. Pin Placement and Logical Cell Placement Blockage
+<img width="1920" height="1080" alt="Screenshot (75)" src="https://github.com/user-attachments/assets/97d9f794-21ef-45dc-ac6c-f6f994de429c" />
+<img width="1920" height="1080" alt="Screenshot (76)" src="https://github.com/user-attachments/assets/5b62cba5-e147-4a66-8acb-f6c2f86c9e97" />
+
 - **Pin Placement:**  
   - Determine optimal I/O pin positions to minimize routing length.
   - Group related pins together for better data flow.
@@ -110,6 +124,10 @@ UF = (700 / 1000) × 100% = **70%**.
 ---
 
 ## 20. Netlist Binding and Initial Place Design
+<img width="1920" height="1080" alt="Screenshot (77)" src="https://github.com/user-attachments/assets/62f56b17-69e5-47d2-9caf-ea401875f27e" />
+<img width="1920" height="1080" alt="Screenshot (78)" src="https://github.com/user-attachments/assets/016e0c0d-e37b-4007-a266-80d5a10a8365" />
+<img width="1920" height="1080" alt="Screenshot (79)" src="https://github.com/user-attachments/assets/7d08b222-3457-468a-bae1-979ae6005ff2" />
+
 - **Netlist Binding:** Mapping of the synthesized logical netlist to actual physical standard cell instances.
 - **Initial Placement:** Early stage where the placer assigns approximate locations to all cells based on connectivity.
 - **Objective:** Reduce wire length and maintain signal timing.
@@ -119,6 +137,9 @@ UF = (700 / 1000) × 100% = **70%**.
 
 
 ## 21. Placement Optimization using Estimated Wire-Length and Capacitance
+<img width="1920" height="1080" alt="Screenshot (80)" src="https://github.com/user-attachments/assets/0dee9383-b92d-434b-804e-92ea482f1a9b" />
+<img width="1920" height="1080" alt="Screenshot (81)" src="https://github.com/user-attachments/assets/4c6e7bce-794b-420a-91f6-249036334245" />
+
 - **Why:** Long wires increase capacitance → slower signals & higher power.
 - **How:**
   - Placer estimates wire length between connected cells.
