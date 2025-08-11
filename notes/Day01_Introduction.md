@@ -3,7 +3,8 @@
 ---
 
 ## Lecture 0: Introduction to QFN-48 Package, Chip, Pads, Core, Die and IPs
-![WhatsApp Image 2025-08-11 at 23 37 51_303c2936](https://github.com/user-attachments/assets/3aba94e3-a9eb-4138-a917-06a5ce62b0f5)
+![WhatsApp Image 2025-08-11 at 23 37 51_be8398fa](https://github.com/user-attachments/assets/7da161b0-6e4b-447e-8302-02867161a1c0)
+
 
 ![WhatsApp Image 2025-08-11 at 23 38 02_d3077d3c](https://github.com/user-attachments/assets/ac1250ee-cf94-4855-9bac-a4e7e6acd0d7)
 
