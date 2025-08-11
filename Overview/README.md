@@ -36,5 +36,6 @@ Placement, Clock Tree Synthesis (CTS) & Routing
 Timing Closure and GDSII Generation
 
 Course by: VSD & NASSCOM
+
 Author: Shyamli Kumari
 
