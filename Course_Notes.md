@@ -1,84 +1,33 @@
-# Digital VLSI SoC Design and Planning Program
+# Digital VLSI SoC Design and Planning Program - Sky130 Detailed Notes
 
-This repository documents my hands-on work and notes from the **Digital VLSI SoC Design and Planning Program** (Skywater130 / OpenLANE workshop).  
-It contains day-wise notes, example scripts, and screenshots that show the physical design flow from RTL to layout.
+## Day 1: Inception of open-source EDA, OpenLANE, and Sky130 PDK
+- Overview of open-source EDA tools  
+- Introduction to Sky130 process design kit (PDK)  
+- Setting up environment and basic RTL flow  
 
----
+## Day 2: Floorplanning and Library Cells
+- Good vs bad floorplan concepts  
+- Library binding and cell placement strategies  
+- Power grid and planning considerations  
 
-## Overview
-During the program I learned the RTL → GDSII flow using open-source EDA tools. The focus was on:
-- PDK and tech files (Skywater 130 nm)
-- Floorplanning and power planning
-- Cell design (Magic) and characterisation (ngspice)
-- Synthesis (Yosys) and Static Timing Analysis (OpenTimer / OpenSTA)
-- Placement, CTS and routing using OpenLANE/OpenROAD tools
+## Day 3: Cell Design and Characterization
+- Magic layout editing basics  
+- Ngspice for cell characterization and simulation  
+- CMOS inverter design and timing characterization  
 
----
+## Day 4: Pre-layout Timing and Clock Tree
+- Timing modeling with delay tables  
+- Clock tree synthesis using TritonCTS  
+- Timing analysis using OpenTimer/OpenSTA  
 
-## Folder structure:
-Digital-VLSI-SoC-Design-and-Planning-Program/
-├──Course_Notes.md
-├── notes/ # Day-wise notes (markdown / pdf)
-├── scripts/ # TCL / Yosys / bash examples
-├── screenshots/ # floorplan, magic, timing images
-├── reports/ # synthesis & timing report text files
+## Day 5: Final Steps for RTL2GDS Flow
+- Routing and DRC checks  
+- Power distribution network design  
+- Final GDSII generation using OpenROAD tools  
 
-
----
-
-## 📝 Notes
-
-All day-wise course notes are stored in the `notes/` folder in markdown (`notes.md`) and PDF formats for easy reference.
-
----
-
-## 💻 Scripts
-
-Inside `scripts/` folder:
-- **TCL scripts** for design automation
-- **Yosys scripts** for synthesis
-- **Bash scripts** for automation and flow control
-
----
-
-## 🖼 Screenshots
-
-Inside `screenshots/` folder:
-- Floorplan snapshots
-- Layout views from Magic tool
-- STA timing reports
-
----
-
-## 📊 Reports
-
-Inside `reports/` folder:
-- Synthesis reports generated from Yosys
-- STA/QoR analysis reports from OpenTimer
-
----
+## Common Issues and Troubleshooting
+- Tool crashes and environment fixes  
+- Timing violations and fixes  
+- Power planning challenges  
 
 
-
-## 🛠 Tools Used
-- **Yosys** – Synthesis
-- **OpenTimer** – Static Timing Analysis
-- **Magic VLSI** – Layout editing
-- **TCL scripting** – Flow automation
-- **VSDSYNTH** – Custom synthesis flow
-
----
-
-## 📅 Course Overview
-The program covered:
-1. **RTL to GDSII flow**
-2. **Floorplanning**
-3. **Synthesis and STA**
-4. **Placement and Routing basics**
-5. **Timing closure**
-
----
-
-## 🤝 Credits
-- **Course**: VSD & NASSCOM
-- **Author**: *Shyamli Kumari*
