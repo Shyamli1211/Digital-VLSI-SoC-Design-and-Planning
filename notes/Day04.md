@@ -1,6 +1,6 @@
 # Day 04 – Pre-layout timing analysis and importance of good clock tree
 
-## Timing modelling using delay tables
+### Timing modelling using delay tables
 
 # Lecture 55 – Lab Steps to Convert Grid Info to Track Info
 This lab focuses on converting grid information (manufacturing grid, placement grid) into routing track information used during PnR.
