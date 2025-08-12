@@ -60,7 +60,7 @@ This information guides placement and routing tools.
 
 ---
 
-Timing analysis with ideal clocks using openSTA
+## Timing analysis with ideal clocks using openSTA
 
 ## Lecture 62 – Summary of Track Concepts
 - Tracks are essential for organized routing.
@@ -104,6 +104,7 @@ Placement arranges standard cells within the floorplan after macros are placed.
 - Place clock-gating cells near registers.
 
 ---
+## Clock tree synthesis TritonCTS and signal integrity
 
 ## Lecture 67 – Congestion-Aware Placement
 - Analyze congestion maps after placement.
@@ -134,6 +135,7 @@ CTS builds a balanced clock network:
 - Balance load distribution.
 
 ---
+## Timing analysis with real clocks using openSTA 
 
 ## Lecture 71 – Clock Skew and Latency
 - **Skew**: Difference in clock arrival times.
