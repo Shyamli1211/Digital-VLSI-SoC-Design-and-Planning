@@ -2,7 +2,7 @@
 
 ## Timing modelling using delay tables
 
-## Lecture 55 – Lab Steps to Convert Grid Info to Track Info
+# Lecture 55 – Lab Steps to Convert Grid Info to Track Info
 This lab focuses on converting grid information (manufacturing grid, placement grid) into routing track information used during PnR.
 
 **Key Steps:**
