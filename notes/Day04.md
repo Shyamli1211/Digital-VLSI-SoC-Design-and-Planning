@@ -2,95 +2,176 @@
 
 Timing modelling using delay tables
 
-Day 04 – Lectures 55 to 62
-Lecture 55 – Lab Steps to Convert Grid Info to Track Info
-This lab focuses on converting grid information into track information for routing.
-Steps:
+## Lecture 55 – Lab Steps to Convert Grid Info to Track Info
+This lab focuses on converting grid information (manufacturing grid, placement grid) into routing track information used during PnR.
 
-Open the design in the layout tool.
+**Key Steps:**
+1. Identify grid pitch in both X and Y directions from tech files.
+2. Map routing track definitions for horizontal and vertical layers.
+3. Verify alignment between cell pins and routing tracks.
+4. Ensure compatibility between placement grid and routing grid to avoid routing violations.
 
-Identify grid definitions for routing layers.
+---
 
-Use the tool command to extract track patterns from grid data.
+## Lecture 56 – Understanding Tracks in Physical Design
+Tracks are predefined routing paths that help maintain uniform routing and avoid design rule violations.
 
-Verify track pitch and offset for each metal layer.
+- **Horizontal and Vertical Tracks**: Defined for alternate metal layers.
+- **Track Pitch**: Distance between two adjacent tracks.
+- **Purpose**: Helps routers decide legal routing paths and ensures pin accessibility.
 
-Lecture 56 – Floorplanning Basics
-Floorplanning is the process of defining the physical layout of a chip before placement and routing.
-Key objectives:
+---
 
-Arrange blocks and macros efficiently to meet performance, power, and area goals.
+## Lecture 57 – Track and Pin Alignment
+Pin alignment is critical for routability:
+- Standard cell pins must be aligned to routing tracks.
+- Misalignment causes extra vias and detours, increasing delay.
+- Ensure library cells follow consistent pin-to-track mapping.
 
-Ensure enough space for routing, clock distribution, and power delivery.
+---
 
-Plan I/O pad locations based on signal and power needs.
+## Lecture 58 – Preferred Routing Directions
+- Even-numbered metal layers usually have **horizontal** preferred routing.
+- Odd-numbered metal layers usually have **vertical** preferred routing.
+- Following preferred directions reduces congestion and improves DRC compliance.
 
-Lecture 57 – Core and Die Area
-Die Area – The total size of the chip, including core and I/O ring.
+---
 
-Core Area – The central region where standard cells and macros are placed.
-Relation:
+## Lecture 59 – LEF Files and Track Information
+**LEF (Library Exchange Format)** files store:
+- Cell dimensions.
+- Pin locations.
+- Track grid definitions.
+This information guides placement and routing tools.
 
-Die area ≥ Core area + I/O and power ring.
+---
 
-Larger die area increases cost but may be necessary for performance or routing.
+## Lecture 60 – Routing Resources and Track Utilization
+- **Routing Resource**: Available tracks for a given area.
+- **Track Utilization**: Percentage of used tracks after routing.
+- High utilization may cause congestion, leading to DRC violations.
 
-Lecture 58 – Aspect Ratio in Floorplanning
-Aspect Ratio (AR) = Core Height / Core Width.
+---
 
-AR = 1 → Square core, generally preferred for balanced routing.
+## Lecture 61 – Impact of Track Information on Routing
+- Well-defined tracks improve routing quality and reduce congestion.
+- Misaligned tracks increase wire length and delay.
+- Proper track setup ensures predictable routing behavior.
 
-AR > 1 → Tall and narrow core.
+---
 
-AR < 1 → Wide and short core.
-Impact:
+Timing analysis with ideal clocks using openSTA
 
-AR affects wire length, congestion, and timing.
+## Lecture 62 – Summary of Track Concepts
+- Tracks are essential for organized routing.
+- Correct pitch, direction, and alignment improve overall chip performance.
+- LEF/DEF files play a key role in defining track info for tools.
 
-Certain designs favor non-square shapes for specific routing advantages.
+---
 
-Lecture 59 – Utilization Factor
-Utilization Factor = (Area occupied by standard cells) / (Total core area).
+## Lecture 63 – Placement Overview
+Placement arranges standard cells within the floorplan after macros are placed.
 
-Typical range: 60%–80%.
+**Goals:**
+- Minimize wire length.
+- Ensure legal placement.
+- Leave sufficient space for routing and power.
 
-Higher utilization → Smaller die size but risk of routing congestion.
+**Stages:**
+1. **Global Placement** – Rough arrangement.
+2. **Detailed Placement** – Fine-tuning for legality and performance.
 
-Lower utilization → Easier routing but larger die and higher cost.
+---
 
-Lecture 60 – Core to Die Margin
-Margin between core boundary and die edge allows space for:
+## Lecture 64 – Placement Constraints
+- **Keep-Out Regions** – No cell placement allowed.
+- **Cell Padding** – Extra spacing between cells.
+- **Critical Path Placement** – Place time-sensitive cells closer.
+- **Blockages** – Reserved areas for routing or future changes.
 
-I/O pads
+---
 
-Power/ground rings
+## Lecture 65 – Timing-Driven Placement
+- Identify **critical paths**.
+- Reduce wire delay by placing related cells closer.
+- Balance timing closure with routability.
 
-ESD protection structures
+---
 
-Proper margin ensures electrical and mechanical stability of the chip.
+## Lecture 66 – Power-Aware Placement
+- Shorter wires for high-activity nets.
+- Spread high-power cells to avoid hot spots.
+- Place clock-gating cells near registers.
 
-Lecture 61 – Pre-Placement Considerations
-Before starting placement:
+---
 
-Finalize floorplan dimensions and aspect ratio.
+## Lecture 67 – Congestion-Aware Placement
+- Analyze congestion maps after placement.
+- Spread cells in high-density areas.
+- Reserve routing channels and adjust macro spacing.
 
-Ensure power grid and I/O locations are fixed.
+---
 
-Place macros in optimal positions with proper spacing.
+## Lecture 68 – Placement Algorithms
+- **Simulated Annealing** – Iterative swap optimization.
+- **Force-Directed** – Cells as masses, nets as springs.
+- **Analytical** – Mathematical optimization for wire length and constraints.
 
-Reserve channels for high-fanout nets like clock and reset.
+---
 
-Lecture 62 – Macro Placement Guidelines
-Place large macros near the core boundary to ease routing.
+## Lecture 69 – Placement Verification
+- **DRC Check** – No overlaps.
+- **Timing Analysis** – Ensure performance targets.
+- **Congestion Analysis** – Avoid bottlenecks.
+- **Power Analysis** – Voltage drop checks.
 
-Group macros with heavy interconnects close to reduce wire length.
+---
 
-Avoid placing macros in the center to prevent routing blockages.
+## Lecture 70 – Clock Tree Synthesis (CTS) Basics
+CTS builds a balanced clock network:
+- Minimize **skew**.
+- Minimize **latency**.
+- Balance load distribution.
 
-Maintain keep-out zones around macros for buffer insertion and routing.
+---
 
+## Lecture 71 – Clock Skew and Latency
+- **Skew**: Difference in clock arrival times.
+  - Positive / Negative skew impacts timing differently.
+- **Latency**: Delay from clock source to register.
 
+---
 
+## Lecture 72 – CTS Design Considerations
+- Choose proper **topology** (H-tree, mesh, spine).
+- Insert buffers to balance skew.
+- Isolate clock nets from noise.
+
+---
+
+## Lecture 73 – CTS Inputs
+- Post-placement netlist.
+- Timing constraints (SDC).
+- Library files for buffers/inverters.
+- CTS options for skew and latency targets.
+
+---
+
+## Lecture 74 – CTS Implementation
+1. Identify clock sources/sinks.
+2. Insert buffers/inverters.
+3. Route clock nets using preferred layers.
+4. Run clock-specific DRC.
+
+---
+
+## Lecture 75 – Post-CTS Optimization
+- Re-run STA.
+- Fix hold violations.
+- Optimize routing for skew.
+- Check clock network power.
+
+---
 
 
 
