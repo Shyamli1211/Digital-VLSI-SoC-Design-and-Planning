@@ -14,3 +14,5 @@
 <img width="2096" height="1216" alt="run_floorplan__2" src="https://github.com/user-attachments/assets/2ba4651c-a118-4596-b163-f0aee2978b85" />
 
 <img width="1920" height="1202" alt="run_placement" src="https://github.com/user-attachments/assets/c269c472-d460-4a43-8436-e41a81aed5a7" />
+
+<img width="1865" height="945" alt="vlsi lab screenshot" src="https://github.com/user-attachments/assets/008786fa-8f7d-491e-a46a-aa57a567c25a" />
