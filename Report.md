@@ -1,18 +1,24 @@
 # VLSI Physical Design Report – Day 1 to Day 5
 
 ---
-
 ## Day 1 – Inception of Open-Source EDA, OpenLANE, Sky130 PDK
-**Theory Highlights:**
-- Overview of open-source tools (OpenLANE, Magic, ngspice, OpenSTA).
-- Introduction to Skywater SKY130 PDK and its role.
-- Understanding RTL-to-GDSII SoC design flow.
 
-**Lab Snapshot:**
-- Environment setup and tool familiarity.
-- Basic commands to launch OpenLANE flow (`prep -design`, `run_synthesis`).
+### Theory Highlights:
+- Overview of open-source EDA tools ecosystem: importance, advantages over commercial tools, and community-driven development.
+- Introduction to OpenLANE: an automated RTL-to-GDSII flow integrating various open-source tools such as Yosys, OpenSTA, TritonRoute, Magic, and others.
+- Role and structure of Skywater SKY130 Process Design Kit (PDK): overview of process technology, design rules, and how PDK enables fabrication of ASICs.
+- Understanding the full chip design flow: from RTL description, synthesis, floorplanning, placement and routing, signoff checks, to final GDSII generation.
+- Importance of standard cell libraries (e.g., sky130_fd_sc_hd) in ASIC design for ensuring timing, power, and area optimization.
+- Introduction to Docker containerization for environment setup, ensuring reproducibility and consistency across different platforms.
 
----
+### Lab Snapshot:
+- Setting up the OpenLANE environment on a Linux system using Docker, including mounting volumes and setting environment variables.
+- Executing the OpenLANE flow command:
+  ```bash
+  ./flow.tcl -design spm -tag openlane_test -overwrite
+<img width="1920" height="1080" alt="Screenshot (105)" src="https://github.com/user-attachments/assets/cadcdf13-65df-4020-bb9e-338342ffc3da" />
+
+<img width="1920" height="1080" alt="Screenshot (107)" src="https://github.com/user-attachments/assets/02a511fe-ecbf-44f9-8c6d-cc6f6e1b0673" />
 
 ## Day 2 – Floorplanning & Library Cells
 **Theory Highlights:**
