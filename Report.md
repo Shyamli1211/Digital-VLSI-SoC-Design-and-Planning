@@ -30,6 +30,7 @@
 - `run_floorplan` command.
 - Viewing floorplan in Magic (`magic -T sky130A.tech...`).
 - Using `S`, `V`, and `Z` keys to navigate and inspect the layout.
+<img width="1864" height="952" alt="day 2 vlsi pic" src="https://github.com/user-attachments/assets/364ae1a4-eb86-4b9b-860c-a7cf5d53d284" />
 
 ---
 
